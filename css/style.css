@@ -1,0 +1,125 @@
+
+#hero {
+ height:100%;
+ width:100%;
+ margin-top: 20vh;
+ background:#fff;
+ display:flex;
+ align-items:center;
+ justify-content: center;
+}
+
+#hero::after {
+width:100%;
+height:100vh;
+content: '';
+position:absolute;
+z-index:10;
+top:0;
+left:0;
+background:rgba(0,0,0,0.5)
+}
+
+
+#hero video {
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+z-index:5;
+object-fit:cover;
+font-family:'object-fit: cover';
+}
+
+/*Textura sobre o video*/
+#hero .texture {
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+z-index:15;
+background:url('../img/texture.png');
+}
+
+
+/*Principal*/
+#hero .caption {
+
+position:relative;
+z-index:20;
+text-align:center;
+color:#ffffff;
+}
+
+#hero .caption h1 {
+
+text-transform: uppercase;
+font-size:3.6em;
+font-family: 'Oswald', sans-serif;
+margin-bottom:1rem;
+}
+
+#hero .caption h2 {
+font-weight:400;
+font-size:1.7rem;
+margin:0;
+font-family: 'PT Sans', sans-serif;
+}
+
+.logo-arquimobi{
+width: 200px;
+}
+
+.btns {
+margin-top: 30px;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.btn {
+font-family: 'Oswald', sans-serif;
+font-size: 14px;
+width: 250px;
+height: 60px;
+cursor: pointer;
+border: 1px solid white;
+color: white;
+text-transform: uppercase;
+background-color: transparent;
+font-weight: lighter;
+letter-spacing: 0.2rem;
+}
+
+.btn:hover {
+background: #f5f5f5;
+color: #000;
+border: none;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width:1200px) {
+
+#hero {
+margin-top: 55%;
+
+}    
+
+#hero .caption h1 {
+    font-size:1.8rem;
+}
+
+.btn {
+    font-size: 11px;
+    width: 150px;
+    height: 50px;
+}
+
+#hero .caption h2 {
+    font-size:1.25rem;
+}
+}
